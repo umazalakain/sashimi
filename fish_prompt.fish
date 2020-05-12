@@ -13,10 +13,10 @@ function fish_prompt
 
   if test $last_status = 0
     set initial_indicator "$green◆"
-    set status_indicator "$normal❯$cyan❯$green❯"
+    set status_indicator "$green❯"
   else
     set initial_indicator "$red✖ $last_status"
-    set status_indicator "$red❯$red❯$red❯"
+    set status_indicator "$red❯"
   end
   set -l cwd $cyan(basename (prompt_pwd))
 
